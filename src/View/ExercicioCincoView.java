@@ -10,9 +10,9 @@ public class ExercicioCincoView {
         ExercicioCincoController ec = new ExercicioCincoController();
 
         System.out.println("digite  valor de N: ");
-        int n = sc.nextInt();
+        double n = sc.nextDouble();
 
-        int resultado = ec.calculaSomatoria(n);
+        double resultado = ec.calculaSomatoria(n);
 
         System.out.println("resultado: "+ resultado);
 

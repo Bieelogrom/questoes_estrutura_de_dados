@@ -5,11 +5,11 @@ public class ExercicioCincoController {
         super();
     }
 
-    public int calculaSomatoria(int n){
-        if(n <= 1){
-            return 1 / n;
+    public double calculaSomatoria(double n){
+        if(n == 1){
+            return 1;
         }else{
-            return n += calculaSomatoria(n - 1);
+            return 1 / n + calculaSomatoria(n - 1);
         }
     }
 }

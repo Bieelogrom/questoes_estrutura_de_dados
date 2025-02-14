@@ -7,7 +7,7 @@ public class ExercicioQuatroController {
 
     public int calculaNegativos(int[] veto, int posicoes){
         if (0 == posicoes){
-            return veto[posicoes];
+            return 1;
         }else{
             if(veto[posicoes] < 0){
                 return 1 + calculaNegativos(veto, posicoes - 1);
@@ -15,6 +15,6 @@ public class ExercicioQuatroController {
                 return calculaNegativos(veto, posicoes - 1);
             }
         }
-        //testando
+
     }
 }
