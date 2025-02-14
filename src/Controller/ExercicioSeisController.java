@@ -7,9 +7,9 @@ public class ExercicioSeisController {
 
     public int somarValores(int a, int b){
         if(b == 0){
-            return b;
+            return a;
         }else {
-            return a + somarValores(a, b-1);
+            return somarValores(a+1, b-1);
         }
     }
 }
